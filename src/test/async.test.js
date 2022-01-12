@@ -15,6 +15,11 @@ describe("async Test", () => {
   });
 
   it("test async-done reject", () => {
-      return expect(fetchProduct("error")).rejects.toBe("network error")
+    return expect(fetchProduct("error")).rejects.toBe("network error");
+  });
+
+  it("test async-done reject", async () => {
+    const product = await fetchProduct();
+    expect(product).toEqual({ item: "Milk", price: 200 });
   });
 });
