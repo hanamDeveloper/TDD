@@ -13,6 +13,11 @@ describe('Calculator Test', () => {
         expect(Calculator1.value).toBe(num)
     })
 
+    test('more then 100 should be throw error!', () => {
+        const num = 1000;
+        expect(() => Calculator1.add(num)).toThrow(Error)
+    })
+
     test('clear', () => {
         Calculator1.clear();
         expect(Calculator1.value).toBe(0)
