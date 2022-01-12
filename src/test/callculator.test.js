@@ -23,6 +23,7 @@ describe('Calculator Test', () => {
     })
 
     test('clear', () => {
+        Calculator1.set(20);
         Calculator1.clear();
         expect(Calculator1.value).toBe(0)
     })
@@ -34,17 +35,29 @@ describe('Calculator Test', () => {
     })
 
     test('multiply', () => {
-        Calculator1.clear();
-        const num = 2;
+        const num = 5;
+        Calculator1.set(20);
         Calculator1.multiply(num);
-        expect(Calculator1.value).toBe(Calculator1.value * num)
+        expect(Calculator1.value).toBe(100)
     })
 
-    test('divide', () => {
-        Calculator1.clear();
-        const num = 2;
-        Calculator1.divide(num);
-        expect(Calculator1.value).toBe(Calculator1.value / num)
+    describe('divide', () => {
+        it('10 / 5', () => {
+            Calculator1.set(10);
+            Calculator1.divide(5);
+            expect(Calculator1.value).toBe(2)
+        })
+
+        it('0 / 0 === NaN', () => {
+            Calculator1.divide(0);
+            expect(Calculator1.value).toBe(NaN)
+        })
+        
+        it('1 / 0 === Infiinity', () => {
+            Calculator1.set(1);
+            Calculator1.divide(0);
+            expect(Calculator1.value).toBe(Infinity)
+        })
     })
 })
 
