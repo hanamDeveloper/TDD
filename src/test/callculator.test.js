@@ -2,7 +2,11 @@ const { test } = require('@jest/globals');
 const Calculator = require('../calculator');
 
 describe('Calculator Test', () => {
-    const Calculator1 = new Calculator;
+    let Calculator1;
+    beforeEach(() => {
+        Calculator1 =  new Calculator()
+    })
+
     test('default value', () => {
         expect(Calculator1.value).toBe(0)
     })

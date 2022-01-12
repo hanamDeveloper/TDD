@@ -26,7 +26,7 @@ FN:26,multiply
 FN:30,divide
 FNF:7
 FNH:6
-FNDA:1,Calculator
+FNDA:7,Calculator
 FNDA:0,set
 FNDA:3,clear
 FNDA:2,add
@@ -35,8 +35,8 @@ FNDA:1,multiply
 FNDA:1,divide
 DA:1,1
 DA:2,1
-DA:3,1
-DA:4,1
+DA:3,7
+DA:4,7
 DA:5,1
 DA:6,1
 DA:7,0
@@ -70,7 +70,7 @@ DA:34,1
 DA:35,1
 LF:35
 LH:33
-BRDA:2,0,0,1
+BRDA:2,0,0,7
 BRDA:10,1,0,3
 BRDA:14,2,0,2
 BRDA:16,3,0,1
