@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1641953979082" clover="3.2.0">
-  <project timestamp="1641953979083" name="All files">
-    <metrics statements="5" coveredstatements="5" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1" elements="7" coveredelements="7" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
+<coverage generated="1641958856953" clover="3.2.0">
+  <project timestamp="1641958856953" name="All files">
+    <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="6" coveredelements="6" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
     <file name="add.js" path="/Users/shmin/study_projects/TDD/src/add.js">
-      <metrics statements="5" coveredstatements="5" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="1" type="stmt"/>
