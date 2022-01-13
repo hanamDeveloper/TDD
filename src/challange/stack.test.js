@@ -1,12 +1,18 @@
+describe("test Stack", () => {
+  let array1 = [];
 
+  beforeEach(() => {
+    array1 = [1, 2, 3];
+  });
 
+  it("new string should be last Index", () => {
+    const content = 4;
+    array1.push(content);
+    expect(array1[array1.length - 1]).toEqual(content);
+  });
 
-describe('test Stack', () => {
-    const array1 = [];
-    const result = [1];
-
-    it('sholud be Index', () => {
-        array1.push(1)
-        expect(array1).toEqual(result)
-    })
-})
+  it("remove should be last Index", () => {
+    array1.pop();
+    expect(array1[array1.length - 1]).toEqual(2);
+  });
+});
